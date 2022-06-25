@@ -1,0 +1,28 @@
+ul{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+}
+li{
+    list-style:none;
+    text-decoration: none;
+    
+}
+
+
+.html,.css,.js,.php{
+    display: grid;
+    grid-template-columns: 1fr;
+    visibility: hidden;
+    cursor: pointer;
+    color: #0d4040;
+ 
+}
+a{
+    text-decoration: none;
+}
+p{
+   cursor: pointer;
+   color: green;
+   width: 100%;
+   background-color: rgb(251, 240, 240);
+}

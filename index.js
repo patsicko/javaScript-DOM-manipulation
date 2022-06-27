@@ -31,3 +31,23 @@ btn.addEventListener("click",function(e){
   shadow.classList.toggle("cover");
   navigations.classList.toggle("expand");
 })
+let main=document.getElementById("main");
+let x=document.getElementById("x");
+let paragraph=document.getElementById("paragraph");
+
+
+x.addEventListener("click",function(e){
+  
+  // e.target.parentNode.remove();
+  // e.target.parentNode.classList.toggle("remove");
+  paragraph.classList.toggle("remove");
+  
+})
+
+
+let model=document.getElementById("model");
+model.addEventListener("click",function(e){
+  paragraph.classList.toggle("pop");
+  paragraph.classList.toggle("remove");
+  
+})

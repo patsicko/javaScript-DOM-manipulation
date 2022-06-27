@@ -31,23 +31,21 @@ btn.addEventListener("click",function(e){
   shadow.classList.toggle("cover");
   navigations.classList.toggle("expand");
 })
-let main=document.getElementById("main");
+
 let x=document.getElementById("x");
 let paragraph=document.getElementById("paragraph");
+let model=document.getElementById("model");
 
 
-x.addEventListener("click",function(e){
-  
-  // e.target.parentNode.remove();
-  // e.target.parentNode.classList.toggle("remove");
-  paragraph.classList.toggle("remove");
+model.addEventListener("click",function(e){
+
+  paragraph.classList.add("pop");
   
 })
 
-
-let model=document.getElementById("model");
-model.addEventListener("click",function(e){
-  paragraph.classList.toggle("pop");
-  paragraph.classList.toggle("remove");
+x.addEventListener("click",function(e){
+  
+  e.target.parentNode.classList.remove("pop");
+  
   
 })
